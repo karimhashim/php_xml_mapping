@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imsccv1p2/imscp_v1p1" identifier="cctd0001"
+    xmlns:lom="http://ltsc.ieee.org/xsd/imsccv1p2/LOM/resource"
+    xmlns:lomimscc="http://ltsc.ieee.org/xsd/imsccv1p2/LOM/manifest"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.imsglobal.org/xsd/imsccv1p2/imscp_v1p1 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imscp_v1p2_v1p0.xsd
+                        http://www.imsglobal.org/xsd/imsccv1p2/imsccauth_v1p2 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imsccauth_v1p2.xsd
+                        http://ltsc.ieee.org/xsd/imsccv1p2/LOM/manifest http://www.imsglobal.org/profile/cc/ccv1p2/LOM/ccv1p2_lommanifest_v1p0.xsd
+                        http://ltsc.ieee.org/xsd/imsccv1p2/LOM/resource http://www.imsglobal.org/profile/cc/ccv1p2/LOM/ccv1p2_lomresource_v1p0.xsd
+                        http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_qtiasiv1p2p1_v1p0.xsd
+                        http://www.imsglobal.org/xsd/imsccv1p2/imswl_v1p2 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imswl_v1p2.xsd
+                        http://www.imsglobal.org/xsd/imsccv1p2/imsdt_v1p2 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imsdt_v1p2.xsd
+                        http://www.imsglobal.org/xsd/imsccv1p2/imscsmd_v1p0 http://www.imsglobal.org/profile/cc/ccv1p2/ccv1p2_imscsmd_v1p0.xsd
+                        http://www.imsglobal.org/xsd/imslticc_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticc_v1p0p1.xsd
+                        http://www.imsglobal.org/xsd/imslticp_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticp_v1p0.xsd
+                        http://www.imsglobal.org/xsd/imslticm_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticm_v1p0.xsd
+                        http://www.imsglobal.org/xsd/imsbasiclti_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imsbasiclti_v1p0p1.xsd">
+    <metadata>
+        <schema>IMS Common Cartridge</schema>
+        <schemaversion>1.2.0</schemaversion>
+        <lomimscc:lom>
+            <lomimscc:general>
+                <lomimscc:title>
+                    <lomimscc:string>Home :   KG1  2022-2023: KG1-A</lomimscc:string>
+                </lomimscc:title>
+            </lomimscc:general>
+        </lomimscc:lom>
+    </metadata>
+    <organizations>
+        <organization identifier="org" structure="rooted-hierarchy">
+            <item identifier="root">
+                <item identifier="iden0000001">
+                    <title>Plans</title>
+<!--                    children folders-->
+                    <item identifier="iden0000002">
+                        <title>Q1</title>
+                        <item identifier="iden0000003" identifierref="ccres0000001">
+                            <title>Science Week 1.docx</title>
+                        </item>
+                        <item identifier="iden0000004" identifierref="ccres0000002">
+                            <title>Science Week 3.docx</title>
+                        </item>
+                        <item identifier="iden0000005" identifierref="ccres0000003">
+                            <title>Science Week 4.docx</title>
+                        </item>
+                        <item identifier="iden0000006" identifierref="ccres0000006">
+                            <title>Science Week 5.docx</title>
+                        </item>
+                        <item identifier="iden0000007" identifierref="ccres0000008">
+                            <title>Science Week 7.docx</title>
+                        </item>
+                    </item>
+                    <item identifier="iden0000008">
+                        <title>Q2</title>
+                        <item identifier="iden0000009" identifierref="ccres0000004">
+                            <title>Science Week 9.docx</title>
+                        </item>
+                        <item identifier="iden0000010" identifierref="ccres0000005">
+                            <title>Science Week 10.docx</title>
+                        </item>
+                        <item identifier="iden0000011" identifierref="ccres0000007">
+                            <title>Science Week 12.docx</title>
+                        </item>
+                    </item>
+                </item>
+<!--                remove below item as it's extra, only for debugging-->
+                <item identifier="iden1000001">
+                    <title>Plans2</title>
+                    <!--                    children folders-->
+                    <item identifier="iden0000002">
+                        <title>Q1</title>
+                        <item identifier="iden0000003" identifierref="ccres0000001">
+                            <title>Science Week 1.docx</title>
+                        </item>
+                        <item identifier="iden0000004" identifierref="ccres0000002">
+                            <title>Science Week 3.docx</title>
+                        </item>
+                        <item identifier="iden0000005" identifierref="ccres0000003">
+                            <title>Science Week 4.docx</title>
+                        </item>
+                        <item identifier="iden0000006" identifierref="ccres0000006">
+                            <title>Science Week 5.docx</title>
+                        </item>
+                        <item identifier="iden0000007" identifierref="ccres0000008">
+                            <title>Science Week 7.docx</title>
+                        </item>
+                    </item>
+                    <item identifier="iden0000008">
+                        <title>Q2</title>
+                        <item identifier="iden0000009" identifierref="ccres0000004">
+                            <title>Science Week 9.docx</title>
+                        </item>
+                        <item identifier="iden0000010" identifierref="ccres0000005">
+                            <title>Science Week 10.docx</title>
+                        </item>
+                        <item identifier="iden0000011" identifierref="ccres0000007">
+                            <title>Science Week 12.docx</title>
+                        </item>
+                    </item>
+                </item>
+            </item>
+        </organization>
+    </organizations>
+    <resources>
+        <resource identifier="ccres0000001" type="webcontent"
+            href="ccres0000001/Science Week 1.docx">
+            <metadata />
+            <file href="ccres0000001/Science Week 1.docx" />
+        </resource>
+        <resource identifier="ccres0000002" type="webcontent"
+            href="ccres0000002/Science Week 3.docx">
+            <metadata />
+            <file href="ccres0000002/Science Week 3.docx" />
+        </resource>
+        <resource identifier="ccres0000003" type="webcontent"
+            href="ccres0000003/Science Week 4.docx">
+            <metadata />
+            <file href="ccres0000003/Science Week 4.docx" />
+        </resource>
+        <resource identifier="ccres0000004" type="webcontent"
+            href="ccres0000004/Science Week 9.docx">
+            <metadata />
+            <file href="ccres0000004/Science Week 9.docx" />
+        </resource>
+        <resource identifier="ccres0000005" type="webcontent"
+            href="ccres0000005/Science Week 10.docx">
+            <metadata />
+            <file href="ccres0000005/Science Week 10.docx" />
+        </resource>
+        <resource identifier="ccres0000006" type="webcontent"
+            href="ccres0000006/Science Week 5.docx">
+            <metadata />
+            <file href="ccres0000006/Science Week 5.docx" />
+        </resource>
+        <resource identifier="ccres0000007" type="webcontent"
+            href="ccres0000007/Science Week 12.docx">
+            <metadata />
+            <file href="ccres0000007/Science Week 12.docx" />
+        </resource>
+        <resource identifier="ccres0000008" type="webcontent"
+            href="ccres0000008/Science Week 7.docx">
+            <metadata />
+            <file href="ccres0000008/Science Week 7.docx" />
+        </resource>
+    </resources>
+</manifest>
