@@ -1,11 +1,9 @@
 <?php
 
-class XmlDataModels
+class XmlDataExtractor
 {
-
     private array $organizations = [];
     private array $resources;
-
     public function __construct(SimpleXMLElement $xml)
     {
 

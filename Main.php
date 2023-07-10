@@ -1,18 +1,17 @@
 <?php
 
-require_once "models/XmlDataModels.php";
+require_once "utils/XmlDataExtractor.php";
 require_once "utils/ValueMapper.php";
-require_once "utils/BFS.php";
+require_once "utils/XmlDirectoryBfsParser.php";
 
 $xml = simplexml_load_file("assets/imsmanifest.xml");
 
-$xmlData = new XmlDataModels($xml);
+$xmlData = new XmlDataExtractor($xml);
 
-$rootItem = $xmlData->getOrganizations()[0]->items[0];
+$rootItem = $xmlData->getOrganizations()[0]->items[0]->item[0];
 
-$dfs = new BFS();
-
-$dfs->search($rootItem);
+$xmlDirectoryBfsParser = new XmlDirectoryBfsParser();
+$xmlDirectoryBfsParser->process($rootItem);
 
 
 echo "ok";
