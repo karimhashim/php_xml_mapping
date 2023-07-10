@@ -4,13 +4,18 @@ class FolderModel
 {
     private string $id;
     private string $name;
-    private string $parentId;
-    private string $groupId;
+    private string $parentId = "";
+    private string $groupId = "";
     private array $childrenFolders;
     private array $childrenFiles;
-    private bool $isActive;
-    private bool $isDeleted;
+    private bool $isActive = true;
+    private bool $isDeleted = false;
 
+    public function __construct()
+    {
+        $this->childrenFolders = array();
+        $this->childrenFiles = array();
+    }
 
 
     public function setId(string $id): void
@@ -53,9 +58,9 @@ class FolderModel
         return $this->groupId;
     }
 
-    public function setChildrenFolders(array $childrenFolders): void
+    public function addToChildrenFolders(FolderModel $childFolder): void
     {
-        $this->childrenFolders = $childrenFolders;
+        $this->childrenFolders[] = $childFolder;
     }
 
     public function getChildrenFolders(): array
@@ -63,9 +68,9 @@ class FolderModel
         return $this->childrenFolders;
     }
 
-    public function setChildrenFiles(array $childrenFiles): void
+    public function addToChildrenFiles(FileModel $childFile): void
     {
-        $this->childrenFiles = $childrenFiles;
+        $this->childrenFiles[] = $childFile;
     }
 
     public function getChildrenFiles(): array

@@ -8,8 +8,8 @@ class FileModel {
     private string $groupId;
     private string $driveId;
     private string $type;
-    private bool $isActive;
-    private bool $isDeleted;
+    private bool $isActive = true;
+    private bool $isDeleted = false;
 
     public function setId(string $id): void
     {
