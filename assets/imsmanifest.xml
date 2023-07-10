@@ -28,6 +28,7 @@
     </metadata>
     <organizations>
         <organization identifier="org" structure="rooted-hierarchy">
+<!--            I get into here-->
             <item identifier="root">
                 <item identifier="iden0000001">
                     <title>Plans</title>
@@ -64,40 +65,40 @@
                     </item>
                 </item>
 <!--                remove below item as it's extra, only for debugging-->
-                <item identifier="iden1000001">
-                    <title>Plans2</title>
-                    <!--                    children folders-->
-                    <item identifier="iden0000002">
-                        <title>Q1</title>
-                        <item identifier="iden0000003" identifierref="ccres0000001">
-                            <title>Science Week 1.docx</title>
-                        </item>
-                        <item identifier="iden0000004" identifierref="ccres0000002">
-                            <title>Science Week 3.docx</title>
-                        </item>
-                        <item identifier="iden0000005" identifierref="ccres0000003">
-                            <title>Science Week 4.docx</title>
-                        </item>
-                        <item identifier="iden0000006" identifierref="ccres0000006">
-                            <title>Science Week 5.docx</title>
-                        </item>
-                        <item identifier="iden0000007" identifierref="ccres0000008">
-                            <title>Science Week 7.docx</title>
-                        </item>
-                    </item>
-                    <item identifier="iden0000008">
-                        <title>Q2</title>
-                        <item identifier="iden0000009" identifierref="ccres0000004">
-                            <title>Science Week 9.docx</title>
-                        </item>
-                        <item identifier="iden0000010" identifierref="ccres0000005">
-                            <title>Science Week 10.docx</title>
-                        </item>
-                        <item identifier="iden0000011" identifierref="ccres0000007">
-                            <title>Science Week 12.docx</title>
-                        </item>
-                    </item>
-                </item>
+<!--                <item identifier="iden1000001">-->
+<!--                    <title>Plans2</title>-->
+<!--                    &lt;!&ndash;                    children folders&ndash;&gt;-->
+<!--                    <item identifier="iden0000002">-->
+<!--                        <title>Q1</title>-->
+<!--                        <item identifier="iden0000003" identifierref="ccres0000001">-->
+<!--                            <title>Science Week 1.docx</title>-->
+<!--                        </item>-->
+<!--                        <item identifier="iden0000004" identifierref="ccres0000002">-->
+<!--                            <title>Science Week 3.docx</title>-->
+<!--                        </item>-->
+<!--                        <item identifier="iden0000005" identifierref="ccres0000003">-->
+<!--                            <title>Science Week 4.docx</title>-->
+<!--                        </item>-->
+<!--                        <item identifier="iden0000006" identifierref="ccres0000006">-->
+<!--                            <title>Science Week 5.docx</title>-->
+<!--                        </item>-->
+<!--                        <item identifier="iden0000007" identifierref="ccres0000008">-->
+<!--                            <title>Science Week 7.docx</title>-->
+<!--                        </item>-->
+<!--                    </item>-->
+<!--                    <item identifier="iden0000008">-->
+<!--                        <title>Q2</title>-->
+<!--                        <item identifier="iden0000009" identifierref="ccres0000004">-->
+<!--                            <title>Science Week 9.docx</title>-->
+<!--                        </item>-->
+<!--                        <item identifier="iden0000010" identifierref="ccres0000005">-->
+<!--                            <title>Science Week 10.docx</title>-->
+<!--                        </item>-->
+<!--                        <item identifier="iden0000011" identifierref="ccres0000007">-->
+<!--                            <title>Science Week 12.docx</title>-->
+<!--                        </item>-->
+<!--                    </item>-->
+<!--                </item>-->
             </item>
         </organization>
     </organizations>

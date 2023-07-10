@@ -52,14 +52,14 @@ class RootItem
 {
     public string $identifier;
     //public string $title;
-    public array $items = array();
+    public array $item = array();
 
     public function __construct($xml)
     {
         $this->identifier = $xml->attributes()->identifier;
 
         foreach ($xml->item as $item) {
-            $this->items[] = $item;
+            $this->item[] = $item;
 
         }
     }
