@@ -40,7 +40,7 @@ class XmlDirectoryBfsParser {
      * The function use Breadth first search algorithm to process folder structure the existed in xml file
      * @return void
      */
-    public function process(): void {
+    private function process(): void {
 
         $this->addRootDirectory();
 
