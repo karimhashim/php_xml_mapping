@@ -23,8 +23,14 @@ class XmlDirectoryBfsParser {
      */
     private array $directoryStructure;
 
-    public function __construct()
+    /**
+     * @var SimpleXMLElement The starting point for processing root node of graph directory structure
+     */
+    private SimpleXMLElement $rootNode;
+
+    public function __construct(SimpleXMLElement $rootNode)
     {
+        $this->rootNode = $rootNode;
         $this->exploredNodes = new SplQueue();
         $this->visited = array();
         $this->directoryStructure = array();
@@ -32,12 +38,11 @@ class XmlDirectoryBfsParser {
 
     /**
      * The function use Breadth first search algorithm to process folder structure the existed in xml file
-     * @param $rootNode $rootNode the root xml element act as a starting point in the graph
      * @return void
      */
-    public function process(SimpleXMLElement $rootNode): void {
+    public function process(): void {
 
-        $this->addDirectoryFirstLevel($rootNode);
+        $this->addRootDirectory();
 
         while (!$this->exploredNodes->isEmpty()){
             $parentNode = $this->exploredNodes->dequeue(); //current exploring node
@@ -69,7 +74,7 @@ class XmlDirectoryBfsParser {
      * @param string $parentId the parentFolderId
      * @return FileModel|FolderModel
      */
-    private function parseXmlNode(SimpleXMLElement $xmlNode, string $parentId = "") : FolderModel | FileModel{
+    private function parseXmlNode(SimpleXMLElement $xmlNode, string $parentId) : FolderModel | FileModel{
         $identifierref = $xmlNode->attributes()->identifierref;
 
         if (is_null($identifierref) || empty((string)$identifierref)){
@@ -82,20 +87,18 @@ class XmlDirectoryBfsParser {
     }
 
     /**
-     * Add the directory base (first) level
-     * @param SimpleXMLElement $rootNode the starting point for processing graph folder structure
+     * Add the directory base (root) level
      * @return void
      */
-    private function addDirectoryFirstLevel(SimpleXMLElement $rootNode): void {
-        foreach ($rootNode->item as $node){
-            $parsedXmlNode = $this->parseXmlNode($node);
-            $this->visited[$parsedXmlNode->getId()] = $parsedXmlNode;
-            $this->exploredNodes->enqueue($node);
-            $this->directoryStructure[] = $parsedXmlNode;
-        }
+    private function addRootDirectory(): void {
+        $parsedXmlNode = $this->parseXmlNode($this->rootNode, "root");
+        $this->visited[$parsedXmlNode->getId()] = $parsedXmlNode;
+        $this->exploredNodes->enqueue($this->rootNode);
+        $this->directoryStructure[] = $parsedXmlNode;
     }
 
     public function getDirectoryStructure() : array{
+        $this->process();
         return $this->directoryStructure;
     }
 

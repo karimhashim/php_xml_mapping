@@ -10,9 +10,11 @@ $xmlData = new XmlDataExtractor($xml);
 
 $rootItem = $xmlData->getOrganizations()[0]->items[0]->item[0];
 
-$xmlDirectoryBfsParser = new XmlDirectoryBfsParser();
-$xmlDirectoryBfsParser->process($rootItem);
+$xmlDirectoryBfsParser = new XmlDirectoryBfsParser($rootItem);
 
+$directoryStructure =  $xmlDirectoryBfsParser->getDirectoryStructure();
+
+print_r($directoryStructure);
 
 echo "ok";
 
