@@ -2,8 +2,8 @@
 
 class XmlDataExtractor
 {
-    private array $organizations = [];
-    private array $resources;
+    private  $organizations = [];
+    private  $resources;
     public function __construct(SimpleXMLElement $xml)
     {
 
@@ -30,9 +30,9 @@ class XmlDataExtractor
 
 class Organization
 {
-    public string $identifier;
-    public string $structure;
-    public array $items = array();
+    public  $identifier;
+    public  $structure;
+    public  $items = array();
 
     public function __construct($xml)
     {
@@ -48,9 +48,9 @@ class Organization
 
 class RootItem
 {
-    public string $identifier;
+    public  $identifier;
     //public string $title;
-    public array $item = array();
+    public  $item = array();
 
     public function __construct($xml)
     {
@@ -67,9 +67,9 @@ class RootItem
 
 class Resource
 {
-    public string $identifier;
-    public string $type;
-    public string $href;
+    public  $identifier;
+    public  $type;
+    public  $href;
 
     public function __construct($xml)
     {

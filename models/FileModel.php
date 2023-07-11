@@ -1,15 +1,15 @@
 <?php
 
 class FileModel {
-    private string $id;
-    private string $randomId;
-    private string $name;
-    private string $parentId;
-    private string $groupId;
-    private string $driveId;
-    private string $type;
-    private bool $isActive = true;
-    private bool $isDeleted = false;
+    private  $id;
+    private  $randomId;
+    private  $name;
+    private  $parentId;
+    private  $groupId;
+    private  $driveId;
+    private  $type;
+    private  $isActive = true;
+    private  $isDeleted = false;
 
     public function setId(string $id): void
     {

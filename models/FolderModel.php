@@ -2,14 +2,14 @@
 
 class FolderModel
 {
-    private string $id;
-    private string $name;
-    private string $parentId = "";
-    private string $groupId = "";
-    private array $childrenFolders;
-    private array $childrenFiles;
-    private bool $isActive = true;
-    private bool $isDeleted = false;
+    private  $id;
+    private  $name;
+    private  $parentId = "";
+    private  $groupId = "";
+    private  $childrenFolders;
+    private  $childrenFiles;
+    private  $isActive = true;
+    private  $isDeleted = false;
 
     public function __construct()
     {

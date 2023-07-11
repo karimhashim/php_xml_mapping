@@ -11,22 +11,22 @@ class XmlDirectoryBfsParser {
     /**
      * @var SplQueue Used for tracking which node currently explored
      */
-    private SplQueue $exploredNodes;
+    private  $exploredNodes;
 
     /**
      * @var array Used for tracking visited node
      */
-    private array $visited;
+    private  $visited;
 
     /**
      * @var array The array indicated the structure of file system
      */
-    private array $directoryStructure;
+    private  $directoryStructure;
 
     /**
      * @var SimpleXMLElement The starting point for processing root node of graph directory structure
      */
-    private SimpleXMLElement $rootNode;
+    private  $rootNode;
 
     public function __construct(SimpleXMLElement $rootNode)
     {
@@ -74,7 +74,7 @@ class XmlDirectoryBfsParser {
      * @param string $parentId the parentFolderId
      * @return FileModel|FolderModel
      */
-    private function parseXmlNode(SimpleXMLElement $xmlNode, string $parentId) : FolderModel | FileModel{
+    private function parseXmlNode(SimpleXMLElement $xmlNode, string $parentId) {
         $identifierref = $xmlNode->attributes()->identifierref;
 
         if (is_null($identifierref) || empty((string)$identifierref)){
